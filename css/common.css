@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  background: no-repeat center center;
+  font-family: 'Microsoft Yahei';
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+dl,
+dd,
+p {
+  margin: 0;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  line-height: 70px;
+  text-align: right;
+  color: #fff;
+}
+.header .news-link {
+  padding-right: 12px;
+}
+.header .sign-link {
+  padding: 0 12px 0 15px;
+  border-left: 1px solid;
+  line-height: 1;
+}
+.header .sign-link:first-child {
+  border-left: none;
+}
+.nav {
+  color: #fff;
+  text-align: center;
+  background: #2f6ed5;
+  font-size: 0;
+}
+.nav .nav-item {
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+  padding-top: 15px;
+}
+.nav .nav-item:hover {
+  background: #1857d6;
+}
+.nav .nav-item:hover .nav-item-text {
+  font-weight: bold;
+}
+.nav .nav-item .iconfont {
+  font-size: 28px;
+}
+.nav .nav-item .nav-item-text {
+  font-size: 18px;
+}
+.nav .nav-item.active {
+  background: #1857d6;
+}
+.nav .nav-item.active .nav-item-text {
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  position: relative;
+  margin-top: 40px;
+}
+.footer:before {
+  background: #000;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  z-index: -1;
+}
