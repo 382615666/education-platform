@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        html{
+            background: #fff;
+        }
+        body{
+            margin: 0;
+            font-size: 12px;
+            font-family: "Microsoft Yahei";
+        }
+        p{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header{
+            color: #4a97fc;
+            line-height: 1;
+            padding: 20px 0;
+        }
+        .header .system-name{
+            font-size: 28px;
+        }
+        .main-content{
+            position: relative;
+            background: no-repeat center;
+            padding: 130px 0;
+            text-align: center;
+        }
+        .main-content:before{
+            content: '';
+            opacity: .8;
+            background: #4a97fc;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        .main-content .entry-box{
+            position: relative;
+            display: inline-block;
+            width: 360px;
+            margin-left: 180px;
+        }
+        .main-content .entry-box:first-child{
+            margin-left: 0;
+        }
+        .main-content .entry-desc{
+            font-size: 22px;
+            color: #fff;
+            text-align: left;
+        }
+        .main-content .entry-item{
+            padding: 10px 5px 40px;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 25px;
+            box-shadow: 0px 0px 5px 2px #5b8fd2;
+        }
+        .main-content .entry-btn{
+            background: #4a97fc;
+            width: 200px;
+            line-height: 50px;
+            color: #fff;
+            font-size: 18px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .main-content .entry-btn.disabled{
+            background: #cccccc;
+        }
+        .footer{
+            font-size: 14px;
+            color: #888;
+            line-height: 38px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="main">
+            <p class="system-name">湖南省职业教育项目管理系统</p>
+            <p class="system-name-en">Professional education project management system</p>
+        </div>
+    </div>
+    <div class="main-content" style="background-image: url(../image/temp/bg.jpg)">
+        <div class="entry-box">
+            <p class="entry-desc">湖南省示范性社区</p>
+            <p class="entry-desc">老年教育学习体验基地材料报送平台</p>
+            <div class="entry-item">
+                <img src="../image/1.png" alt="" class="entry-img">
+                <a href="#" class="entry-btn">进入平台</a>
+            </div>
+        </div>
+        <div class="entry-box">
+            <p class="entry-desc">湖南社区</p>
+            <p class="entry-desc">数据发展报告数据采集平台</p>
+            <div class="entry-item">
+                <img src="../image/2.png" alt="" class="entry-img">
+                <a href="#" class="entry-btn disabled">进入平台</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>主办 : 湖南省职业教育项目管理系统&nbsp;&nbsp;&nbsp;承办：湖南省社区教育发展报告数据采集平台 / 湖南省示范性社区老年教育学习体验基地材料报送平台</p>
+        <p>备案号：湘ICP备00000000号     2003-2018 TMALL.COM 版权所有</p>
+    </div>
+</body>
+</html>
