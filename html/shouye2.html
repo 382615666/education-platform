@@ -28,7 +28,19 @@
             padding: 20px 0;
         }
         .header .system-name{
-            font-size: 28px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .header .system-name-en{
+            margin-top: 2px;
+        }
+        .header .system-contact{
+            font-size: 24px;
+            color: #00c5b6;
+            float: right;
+        }
+        .header .system-contact-img{
+            vertical-align: middle;
         }
         .main-content{
             position: relative;
@@ -49,23 +61,39 @@
         .main-content .entry-box{
             position: relative;
             display: inline-block;
-            width: 360px;
+            width: 350px;
             margin-left: 180px;
         }
         .main-content .entry-box:first-child{
             margin-left: 0;
         }
         .main-content .entry-desc{
-            font-size: 22px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+            margin-top: 13px;
+        }
+        .main-content .entry-remark{
+            font-size: 18px;
             color: #fff;
-            text-align: left;
+            position: absolute;
+            bottom: -40px;
+            width: 100%;
+        }
+        .main-content .entry-plat-desc{
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
         }
         .main-content .entry-item{
-            padding: 10px 5px 40px;
+            padding: 45px 0 50px;
             background: #fff;
-            border-radius: 5px;
-            margin-top: 25px;
+            position: relative;
             box-shadow: 0px 0px 5px 2px #5b8fd2;
+        }
+        .main-content .entry-img{
+            width: 150px;
+            height: 150px;
         }
         .main-content .entry-btn{
             background: #4a97fc;
@@ -74,7 +102,7 @@
             color: #fff;
             font-size: 18px;
             display: block;
-            margin: 0 auto;
+            margin: 30px auto 0;
             text-align: center;
         }
         .main-content .entry-btn.disabled{
@@ -85,38 +113,43 @@
             color: #888;
             line-height: 38px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 35px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="main">
-            <p class="system-name">湖南省职业教育项目管理系统</p>
-            <p class="system-name-en">Professional education project management system</p>
+            <div class="system-contact">
+                <img src="../image/telephone.png" alt="" class="system-contact-img">
+                0731-82821912
+            </div>
+            <p class="system-name">湖南省终身教育项目管理系统</p>
+            <p class="system-name-en">Hunan lifelong education project management system</p>
         </div>
     </div>
     <div class="main-content" style="background-image: url(../image/temp/bg.jpg)">
         <div class="entry-box">
-            <p class="entry-desc">湖南省示范性社区</p>
-            <p class="entry-desc">老年教育学习体验基地材料报送平台</p>
             <div class="entry-item">
                 <img src="../image/1.png" alt="" class="entry-img">
-                <a href="#" class="entry-btn">进入平台</a>
+                <p class="entry-desc">湖南省示范性社区</p>
+                <p class="entry-plat-desc">老年体验基地申报平台</p>
+                <a href="#" class="entry-btn disabled">进入平台</a>
+                <p class="entry-remark">平台未到开放时间，敬请期待。</p>
             </div>
         </div>
         <div class="entry-box">
-            <p class="entry-desc">湖南社区</p>
-            <p class="entry-desc">数据发展报告数据采集平台</p>
             <div class="entry-item">
                 <img src="../image/2.png" alt="" class="entry-img">
-                <a href="#" class="entry-btn disabled">进入平台</a>
+                <p class="entry-desc">湖南社区数据发展</p>
+                <p class="entry-plat-desc">报告数据采集平台</p>
+                <a href="#" class="entry-btn">进入平台</a>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>主办 : 湖南省职业教育项目管理系统&nbsp;&nbsp;&nbsp;承办：湖南省社区教育发展报告数据采集平台 / 湖南省示范性社区老年教育学习体验基地材料报送平台</p>
-        <p>备案号：湘ICP备00000000号     2003-2018 TMALL.COM 版权所有</p>
+        <p>主办单位：湖南省教育厅、湖南省老龄工作委员会办公室、湖南广播电视大学&nbsp;&nbsp;&nbsp;版权所有：湖南广播电视大学</p>
+        <p>技术支持：湖南竞网通铭教育科技有限公司&nbsp;&nbsp;&nbsp;备案号： 湘ICP备09005180号-9</p>
     </div>
 </body>
 </html>
