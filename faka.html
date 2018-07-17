@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商户平台</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            margin: 0;
+        }
+        .main{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .btn{
+            line-height: 2;
+            color: #fff;
+            border: 1px solid;
+            border-radius: 1.5em;
+            font-size: 14px;
+            padding: .5em 2em;
+            text-align: center;
+        }
+        .btn:hover{
+            background: #fff;
+            color: #018ebb;
+            border-color: #fff;
+        }
+        .header{
+            height: 700px;
+            background: no-repeat center center #0099c2;
+            position: relative;
+        }
+        .header .nav{
+            text-align: right;
+            line-height: 100px;
+        }
+        .header .logo{
+            float: left;
+            width: 200px;
+            height: 100px;
+        }
+        .nav .btn{
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        .header .buy-btn{
+            position: absolute;
+            bottom: 80px;
+            width: 180px;
+            left: 50%;
+            margin-left: -119px;
+            font-size: 16px;
+        }
+        .step-box{
+            text-align: center;
+            padding-top: 40px;
+        }
+        .step-box .step-item{
+            display: inline-block;
+            width: 290px;
+        }
+        .step-box .iconfont{
+            font-size: 60px;
+            color: #235a69;
+        }
+        .step-box .step-text{
+            font-size: 16px;
+            color: #666;
+            line-height: 50px;
+        }
+        .tool-tip-box{
+            position: fixed;
+            right: 0;
+            bottom: 200px;
+            text-align: center;
+        }
+        .tool-tip-box .tool-tip-item{
+            background: #fff;
+            color: #0099c2;
+            width: 60px;
+            height: 50px;
+            padding-top: 10px;
+            border-bottom: 1px solid;
+        }
+        .tool-tip-box .iconfont{
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="background-image: url()">
+        <div class="main">
+            <div class="nav">
+                <img src="image/temp/indexbg.jpg" alt="" class="logo">
+                <a href="#" class="btn">账户</a>
+                <a href="#" class="btn">退出</a>
+                <a href="#" class="btn">登录</a>
+                <a href="#" class="btn">注册</a>
+            </div>
+        </div>
+        <a href="#" class="btn buy-btn">我要卖卡</a>
+    </div>
+    <div class="main step-box">
+        <div class="step-item">
+            <i class="iconfont icon-huiyuanzhucedengluguanli"></i>
+            <p class="step-text">1.注册账号，登录账户</p>
+        </div>
+        <div class="step-item">
+            <i class="iconfont icon-tijiao"></i>
+            <p class="step-text">2.提交卡密，等待验卡</p>
+        </div>
+        <div class="step-item">
+            <i class="iconfont icon-yinxingqia"></i>
+            <p class="step-text">3.验卡成功，资金到账</p>
+        </div>
+        <div class="step-item">
+            <i class="iconfont icon-tixian"></i>
+            <p class="step-text">4.账户提现，交易成功</p>
+        </div>
+    </div>
+    <div class="tool-tip-box">
+        <div class="tool-tip-item">
+            <i class="iconfont icon-qq"></i>
+            <p class="tool-tip-text">客服</p>
+        </div>
+        <div class="tool-tip-item">
+            <i class="iconfont icon-tixian"></i>
+            <p class="tool-tip-text">费率</p>
+        </div>
+    </div>
+</body>
+</html>
