@@ -66,6 +66,17 @@
             display: inline-block;
             width: 290px;
         }
+        .step-box .step-item:before{
+            content: '...';
+            position: absolute;
+            color: #235a69;
+            font-size: 40px;
+            margin-left: -150px;
+            letter-spacing: 20px;
+        }
+        .step-box .step-item:first-child:before{
+            display: none;
+        }
         .step-box .iconfont{
             font-size: 60px;
             color: #235a69;
@@ -78,7 +89,7 @@
         .tool-tip-box{
             position: fixed;
             right: 0;
-            bottom: 200px;
+            top: 300px;
             text-align: center;
         }
         .tool-tip-box .tool-tip-item{
@@ -95,7 +106,7 @@
     </style>
 </head>
 <body>
-    <div class="header" style="background-image: url()">
+    <div class="header" style="background-image: url(./fonts/jumbotron.png)">
         <div class="main">
             <div class="nav">
                 <img src="image/temp/indexbg.jpg" alt="" class="logo">
