@@ -7,23 +7,23 @@
     .active-list-box{
       display: inline-block;
       border-left: inherit;
-      padding: 0 20px 20px;
-      width: 238px;
+      width: 281px;
+      margin-left: -4px;
       &:first-child{
+        margin-left: 0;
         border-left: none;
       }
     }
     .active-title{
       font-size: 16px;
       font-weight: bold;
-      color: #2f6ed5;
+      color: #333333;
       line-height: 19px;
-      border-left: 3px solid;
-      margin: 18px 0;
-      padding-left: 10px;
+      padding: 18px 20px;
+      background: #eaf0fb;
     }
     .active-more{
-      color: #aaa8ab;
+      color: #2d6fdb;
       font-weight: normal;
       font-size: 12px;
       float: right;
@@ -34,6 +34,7 @@
       text-overflow: ellipsis;
       height: 28px;
       overflow: hidden;
+      padding: 0 20px;
     }
   }
   .article-box{
@@ -107,7 +108,14 @@
       display: inline-block;
       height: 120px;
       padding-top: 20px;
-      width: 33.33%;
+      width: 97px;
+      background: #f7f7f7;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      vertical-align: top;
+      &:hover{
+        background: #eaf0fb;
+      }
       .entrance-title{
         color: #333;
         font-weight: bold;
