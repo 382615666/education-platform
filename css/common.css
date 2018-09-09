@@ -14,18 +14,24 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+a:hover {
+  color: inherit;
+}
 dl,
 dd,
 p {
   margin: 0;
 }
 .main {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 .header {
   line-height: 70px;
   text-align: right;
+  color: #fff;
+}
+.header .sign-box {
   color: #fff;
 }
 .header .news-link {
@@ -47,15 +53,12 @@ p {
 }
 .nav .nav-item {
   display: inline-block;
-  width: 100px;
+  width: 118px;
   height: 75px;
   padding-top: 15px;
 }
 .nav .nav-item:hover {
   background: #1857d6;
-}
-.nav .nav-item:hover .nav-item-text {
-  font-weight: bold;
 }
 .nav .nav-item .iconfont {
   font-size: 28px;

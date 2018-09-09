@@ -13,17 +13,23 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+a:hover{
+  color: inherit;
+}
 dl,dd,p{
   margin: 0;
 }
 .main{
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 .header{
   line-height: 70px;
   text-align: right;
   color: #fff;
+  .sign-box{
+    color: #fff;
+  }
   .news-link{
     padding-right: 12px;
   }
@@ -43,14 +49,11 @@ dl,dd,p{
   font-size: 0;
   .nav-item{
     display: inline-block;
-    width: 100px;
+    width: 118px;
     height: 75px;
     padding-top: 15px;
     &:hover{
       background: #1857d6;
-      .nav-item-text{
-        font-weight: bold;
-      }
     }
     .iconfont{
       font-size: 28px;

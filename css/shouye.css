@@ -38,8 +38,15 @@
   overflow: hidden;
   padding: 0 20px;
 }
+.shouye-page .layui-carousel {
+  float: left;
+}
+.shouye-page .layui-carousel .img {
+  height: 100%;
+  width: 100%;
+}
 .shouye-page .article-box {
-  width: 300px;
+  width: 350px;
   float: right;
 }
 .shouye-page .article-box .tab-box .tab-head-box {
@@ -101,7 +108,7 @@
 .shouye-page .entrance-box {
   width: 300px;
   font-size: 0;
-  margin-left: 500px;
+  margin-left: 560px;
 }
 .shouye-page .entrance-box .entrance-item {
   text-align: center;
@@ -109,7 +116,6 @@
   height: 120px;
   padding-top: 20px;
   width: 97px;
-  background: #f7f7f7;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
   vertical-align: top;
