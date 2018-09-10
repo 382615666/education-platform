@@ -55,6 +55,13 @@
   height: 100%;
   width: 100%;
 }
+.shouye-page .layui-carousel .layui-carousel-ind {
+  text-align: right;
+  top: -30px;
+}
+.shouye-page .layui-carousel .layui-carousel-ind ul {
+  background: none;
+}
 .shouye-page .layui-carousel .layui-carousel-text {
   color: #fff;
   background: #464041;
@@ -63,6 +70,12 @@
   left: 0;
   right: 0;
   line-height: 36px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 120px 0 20px;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .shouye-page .article-box {
   width: 350px;
@@ -95,6 +108,9 @@
 }
 .shouye-page .article-box .tab-box .tab-head-item.active:before {
   display: block;
+}
+.shouye-page .article-box .tab-box .tab-body {
+  display: none;
 }
 .shouye-page .article-box .article-list-box {
   padding: 10px 0;

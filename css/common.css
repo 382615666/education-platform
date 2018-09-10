@@ -44,6 +44,60 @@ p {
   width: 1300px;
   margin: 0 auto;
 }
+.layout-two-column {
+  padding-left: 250px;
+  background: #fff;
+}
+.layout-two-column .layout-left-column {
+  position: absolute;
+  margin-left: -250px;
+  padding: 20px;
+  width: 230px;
+  padding-right: 0;
+}
+.layout-two-column .layout-right-column {
+  padding: 20px;
+}
+.layout-list-vertical .item-box {
+  line-height: 47px;
+  border-bottom: 1px solid #EAEAEA;
+  display: block;
+  padding: 0 20px;
+  color: #666;
+}
+.layout-list-vertical .item-box:first-child {
+  border-top: 1px solid #EAEAEA;
+}
+.layout-list-vertical .item-box:hover {
+  background: #EDF4FF;
+  color: #598BDD;
+}
+.layout-list-vertical .item-box:hover .item-tip {
+  color: inherit;
+}
+.layout-list-vertical .item-box .item-tip {
+  color: #999;
+  float: right;
+}
+.layout-list-btn-vertical .layout-list-btn {
+  line-height: 40px;
+  text-align: center;
+  background: #F4F4F4;
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+.layout-list-btn-vertical .layout-list-btn:hover {
+  background: #598BDD;
+  color: #fff;
+}
+.layout-list-btn-vertical .layout-list-btn.active {
+  background: #598BDD;
+  color: #fff;
+}
+.layout-list-btn-vertical .layout-list-btn:first-child {
+  margin-top: 0;
+}
 .header {
   line-height: 70px;
   text-align: right;
@@ -145,6 +199,19 @@ p {
   width: 370px;
   background: #d7ecff;
 }
+.nav-path {
+  line-height: 50px;
+  border-bottom: 1px solid;
+  font-size: 18px;
+  background: #F4F4F4;
+  color: #2D6FDB;
+  padding: 0 20px;
+}
+.nav-path .nav-path-detail {
+  float: right;
+  color: #666;
+  font-size: 14px;
+}
 .footer {
   text-align: center;
   color: #fff;
@@ -154,7 +221,7 @@ p {
 }
 .footer:before {
   background: #000;
-  opacity: .6;
+  opacity: 0.6;
   position: absolute;
   left: 0;
   right: 0;
