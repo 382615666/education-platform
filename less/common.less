@@ -19,6 +19,24 @@ a:hover{
 dl,dd,p{
   margin: 0;
 }
+.input{
+  border: none;
+  padding: 0 10px;
+}
+.btn{
+  background: #2d6fdb;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  border: 1px solid #2d6fdb;
+  &:hover{
+    color: #fff;
+  }
+}
 .main{
   width: 1300px;
   margin: 0 auto;
@@ -29,16 +47,50 @@ dl,dd,p{
   color: #fff;
   .sign-box{
     color: #fff;
+    display: inline-block;
   }
   .news-link{
     padding-right: 12px;
   }
   .sign-link{
     padding: 0 12px 0 15px;
-    border-left: 1px solid;
-    line-height: 1;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      border-left: 1px solid;
+      height: 18px;
+      top:6px;
+    }
     &:first-child{
-      border-left: none;
+      &:before{
+        display: none;
+      }
+    }
+    &:hover{
+      .person-info-box{
+        display: block;
+      }
+    }
+    .person-info-box{
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background: #fff;
+      color: #333;
+      width: 100px;
+      line-height: 40px;
+      text-align: center;
+      display: none;
+      .person-info-item{
+        display: block;
+        &:hover{
+          background: #eaf0fb;
+        }
+      }
     }
   }
 }
@@ -53,7 +105,7 @@ dl,dd,p{
     height: 75px;
     padding-top: 15px;
     &:hover{
-      background: #1857d6;
+      background: #598BDD;
     }
     .iconfont{
       font-size: 28px;
@@ -62,10 +114,35 @@ dl,dd,p{
       font-size: 18px;
     }
     &.active{
-      background: #1857d6;
-      .nav-item-text{
-        font-weight: bold;
-      }
+      background: #598BDD;
+    }
+  }
+}
+.nav-search{
+  padding-bottom: 30px;
+  .site-box{
+    color: #fff;
+    .site-name{
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 9px;
+      line-height: 1;
+    }
+    .site-name-en{
+      font-size: 12px;
+      padding-top: 8px;
+    }
+  }
+  .site-search-box{
+    float: right;
+    .btn{
+      margin-left: -4px;
+      width: 60px;
+    }
+    .input{
+      line-height: 40px;
+      width: 370px;
+      background: #d7ecff;
     }
   }
 }

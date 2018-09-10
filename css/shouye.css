@@ -5,11 +5,21 @@
 .shouye-page .active-box {
   border: 1px solid #dedede;
   margin-top: 30px;
+  position: relative;
+}
+.shouye-page .active-box:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  width: 1px;
+  background: #eaf0fb;
+  height: 55px;
 }
 .shouye-page .active-box .active-list-box {
   display: inline-block;
   border-left: inherit;
-  width: 281px;
+  width: 306px;
   margin-left: -4px;
 }
 .shouye-page .active-box .active-list-box:first-child {
@@ -44,6 +54,15 @@
 .shouye-page .layui-carousel .img {
   height: 100%;
   width: 100%;
+}
+.shouye-page .layui-carousel .layui-carousel-text {
+  color: #fff;
+  background: #464041;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 36px;
 }
 .shouye-page .article-box {
   width: 350px;
@@ -119,6 +138,7 @@
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
   vertical-align: top;
+  background: #F7F7F7;
 }
 .shouye-page .entrance-box .entrance-item:hover {
   background: #eaf0fb;

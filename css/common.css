@@ -22,6 +22,24 @@ dd,
 p {
   margin: 0;
 }
+.input {
+  border: none;
+  padding: 0 10px;
+}
+.btn {
+  background: #2d6fdb;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  border: 1px solid #2d6fdb;
+}
+.btn:hover {
+  color: #fff;
+}
 .main {
   width: 1300px;
   margin: 0 auto;
@@ -33,17 +51,47 @@ p {
 }
 .header .sign-box {
   color: #fff;
+  display: inline-block;
 }
 .header .news-link {
   padding-right: 12px;
 }
 .header .sign-link {
   padding: 0 12px 0 15px;
-  border-left: 1px solid;
-  line-height: 1;
+  line-height: 30px;
+  display: inline-block;
+  position: relative;
 }
-.header .sign-link:first-child {
-  border-left: none;
+.header .sign-link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  border-left: 1px solid;
+  height: 18px;
+  top: 6px;
+}
+.header .sign-link:first-child:before {
+  display: none;
+}
+.header .sign-link:hover .person-info-box {
+  display: block;
+}
+.header .sign-link .person-info-box {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  color: #333;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+}
+.header .sign-link .person-info-box .person-info-item {
+  display: block;
+}
+.header .sign-link .person-info-box .person-info-item:hover {
+  background: #eaf0fb;
 }
 .nav {
   color: #fff;
@@ -58,7 +106,7 @@ p {
   padding-top: 15px;
 }
 .nav .nav-item:hover {
-  background: #1857d6;
+  background: #598BDD;
 }
 .nav .nav-item .iconfont {
   font-size: 28px;
@@ -67,10 +115,35 @@ p {
   font-size: 18px;
 }
 .nav .nav-item.active {
-  background: #1857d6;
+  background: #598BDD;
 }
-.nav .nav-item.active .nav-item-text {
+.nav-search {
+  padding-bottom: 30px;
+}
+.nav-search .site-box {
+  color: #fff;
+}
+.nav-search .site-box .site-name {
+  font-size: 32px;
   font-weight: bold;
+  letter-spacing: 9px;
+  line-height: 1;
+}
+.nav-search .site-box .site-name-en {
+  font-size: 12px;
+  padding-top: 8px;
+}
+.nav-search .site-search-box {
+  float: right;
+}
+.nav-search .site-search-box .btn {
+  margin-left: -4px;
+  width: 60px;
+}
+.nav-search .site-search-box .input {
+  line-height: 40px;
+  width: 370px;
+  background: #d7ecff;
 }
 .footer {
   text-align: center;
@@ -81,7 +154,7 @@ p {
 }
 .footer:before {
   background: #000;
-  opacity: 0.6;
+  opacity: .6;
   position: absolute;
   left: 0;
   right: 0;

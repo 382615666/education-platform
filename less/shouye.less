@@ -4,10 +4,20 @@
   .active-box{
     border: 1px solid #dedede;
     margin-top: 30px;
+    position: relative;
+    &:after{
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: '';
+      width: 1px;
+      background: #eaf0fb;
+      height: 55px;
+    }
     .active-list-box{
       display: inline-block;
       border-left: inherit;
-      width: 281px;
+      width: 306px;
       margin-left: -4px;
       &:first-child{
         margin-left: 0;
@@ -42,6 +52,15 @@
     .img{
       height: 100%;
       width: 100%;
+    }
+    .layui-carousel-text{
+      color: #fff;
+      background: #464041;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      line-height: 36px;
     }
   }
   .article-box{
@@ -119,6 +138,7 @@
       border-left: 3px solid #fff;
       border-bottom: 3px solid #fff;
       vertical-align: top;
+      background: #F7F7F7;
       &:hover{
         background: #eaf0fb;
       }
