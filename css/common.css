@@ -98,6 +98,10 @@ p {
 .layout-list-btn-vertical .layout-list-btn:first-child {
   margin-top: 0;
 }
+.pagination-box {
+  text-align: right;
+  padding-top: 20px;
+}
 .header {
   line-height: 70px;
   text-align: right;
@@ -221,7 +225,7 @@ p {
 }
 .footer:before {
   background: #000;
-  opacity: 0.6;
+  opacity: .6;
   position: absolute;
   left: 0;
   right: 0;
