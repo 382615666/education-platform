@@ -8,6 +8,7 @@ body {
   margin: 0;
   background: no-repeat center center;
   font-family: 'Microsoft Yahei';
+  background-attachment: fixed;
 }
 a {
   color: inherit;
@@ -39,6 +40,13 @@ p {
 }
 .btn:hover {
   color: #fff;
+}
+.btn-text {
+  background: none;
+  color: #2d6fdb;
+}
+.btn-text:hover {
+  color: #2d6fdb;
 }
 .main {
   width: 1300px;
@@ -247,4 +255,31 @@ p {
 }
 .article-detail-page .article-detail-body {
   background: #fff;
+  margin-top: 20px;
+  padding: 50px;
+}
+.article-detail-page .article-title {
+  color: #333;
+  text-align: center;
+}
+.article-detail-page .article-aside {
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.article-detail-page .article-content {
+  padding: 25px;
+  line-height: 1.5;
+  color: #333;
+}
+.article-detail-page .article-content img {
+  max-width: 100%;
+}
+.article-detail-page .close-article-detail-btn {
+  background: #F4F4F4;
+  color: #333;
+  border-color: #F4F4F4;
+  width: 70px;
+  margin: 0 auto;
+  display: block;
 }
