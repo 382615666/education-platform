@@ -48,6 +48,30 @@ p {
 .btn-text:hover {
   color: #2d6fdb;
 }
+.btn-simple {
+  background: #F4F4F4;
+  color: #333;
+  border-color: #F4F4F4;
+}
+.btn-simple:hover {
+  color: #333;
+}
+.layui-colla-item.active .layui-colla-title {
+  background: #598BDD;
+  color: #fff;
+}
+.layui-colla-item .layui-colla-content-item {
+  color: #333;
+  display: block;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.layui-colla-item .layui-colla-content-item:focus {
+  color: #2d6fdb;
+}
+.layui-colla-item .layui-colla-content-item.active {
+  color: #2d6fdb;
+}
 .main {
   width: 1300px;
   margin: 0 auto;
@@ -55,9 +79,10 @@ p {
 .layout-two-column {
   padding-left: 250px;
   background: #fff;
+  overflow: hidden;
 }
 .layout-two-column .layout-left-column {
-  position: absolute;
+  float: left;
   margin-left: -250px;
   padding: 20px;
   width: 230px;
@@ -276,9 +301,6 @@ p {
   max-width: 100%;
 }
 .article-detail-page .close-article-detail-btn {
-  background: #F4F4F4;
-  color: #333;
-  border-color: #F4F4F4;
   width: 70px;
   margin: 0 auto;
   display: block;

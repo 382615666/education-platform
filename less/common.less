@@ -45,6 +45,34 @@ dl,dd,p{
     color: #2d6fdb;
   }
 }
+.btn-simple{
+  background: #F4F4F4;
+  color: #333;
+  border-color: #F4F4F4;
+  &:hover{
+    color: #333;
+  }
+}
+.layui-colla-item{
+  &.active{
+    .layui-colla-title{
+      background: #598BDD;
+      color: #fff;
+    }
+  }
+  .layui-colla-content-item{
+    color: #333;
+    display: block;
+    line-height: 30px;
+    padding-left:20px;
+    &:focus{
+      color: #2d6fdb;
+    }
+    &.active{
+      color: #2d6fdb;
+    }
+  }
+}
 .main{
   width: 1300px;
   margin: 0 auto;
@@ -52,8 +80,9 @@ dl,dd,p{
 .layout-two-column{
   padding-left: 250px;
   background: #fff;
+  overflow: hidden;
   .layout-left-column{
-    position: absolute;
+    float: left;
     margin-left: -250px;
     padding: 20px;
     width: 230px;
@@ -282,9 +311,6 @@ dl,dd,p{
     }
   }
   .close-article-detail-btn{
-    background: #F4F4F4;
-    color: #333;
-    border-color: #F4F4F4;
     width: 70px;
     margin: 0 auto;
     display: block;
