@@ -1,6 +1,6 @@
 $(function () {
     // 关闭详情页
-    $('.close-article-detail-btn').on('click', function () {
+    $('.close-btn').on('click', function () {
         window.close()
     })
     // 折叠面板扩展

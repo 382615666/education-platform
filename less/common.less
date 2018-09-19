@@ -24,34 +24,14 @@ dl,dd,p{
   border: none;
   padding: 0 10px;
 }
-.btn{
-  background: #2d6fdb;
-  display: inline-block;
+.text-center{
   text-align: center;
-  line-height: 38px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  padding: 0 20px;
-  border: 1px solid #2d6fdb;
-  &:hover{
-    color: #fff;
-  }
 }
-.btn-text{
-  background: none;
-  color: #2d6fdb;
-  &:hover{
-    color: #2d6fdb;
-  }
-}
-.btn-simple{
+.bg_f4{
   background: #F4F4F4;
-  color: #333;
-  border-color: #F4F4F4;
-  &:hover{
-    color: #333;
-  }
+}
+.color_999{
+  color: #999;
 }
 .layui-colla-item{
   &.active{
@@ -234,11 +214,12 @@ dl,dd,p{
   }
   .site-search-box{
     float: right;
-    .btn{
+    .layui-btn{
       margin-left: -4px;
-      width: 60px;
+      background: #2D6FDB;
     }
     .input{
+      vertical-align: middle;
       line-height: 40px;
       width: 370px;
       background: #d7ecff;
@@ -276,9 +257,6 @@ dl,dd,p{
     z-index: -1;
   }
 }
-.bg_f4{
-  background: #F4F4F4;
-}
 .article-detail-page{
   .article-detail-title{
     background: #2D6FDB;
@@ -310,9 +288,7 @@ dl,dd,p{
       max-width: 100%;
     }
   }
-  .close-article-detail-btn{
-    width: 70px;
-    margin: 0 auto;
-    display: block;
+  .close-btn{
+    width: 110px;
   }
 }
