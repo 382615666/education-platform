@@ -70,6 +70,7 @@ p {
 }
 .layout-two-column .layout-right-column {
   padding: 20px;
+  overflow-x: hidden;
 }
 .layout-list-vertical .item-box {
   line-height: 47px;
@@ -210,6 +211,7 @@ p {
 .nav-search .site-search-box .layui-btn {
   margin-left: -4px;
   background: #2D6FDB;
+  width: 110px;
 }
 .nav-search .site-search-box .input {
   vertical-align: middle;
@@ -248,7 +250,10 @@ p {
   content: '';
   z-index: -1;
 }
-.article-detail-page .article-detail-title {
+.detail-box {
+  padding-bottom: 20px;
+}
+.detail-box .detail-title {
   background: #2D6FDB;
   color: #fff;
   font-size: 18px;
@@ -256,28 +261,33 @@ p {
   line-height: 50px;
   height: 50px;
 }
-.article-detail-page .article-detail-body {
+.detail-box .detail-body {
   background: #fff;
   margin-top: 20px;
   padding: 50px;
+  min-height: 500px;
 }
-.article-detail-page .article-title {
+.detail-box .close-btn {
+  width: 110px;
+}
+.article-box .article-title {
   color: #333;
   text-align: center;
+  padding-bottom: 20px;
 }
-.article-detail-page .article-aside {
+.article-box .article-aside {
   text-align: center;
-  line-height: 50px;
   border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 20px;
 }
-.article-detail-page .article-content {
+.article-box .article-content {
   padding: 25px;
   line-height: 1.5;
   color: #333;
 }
-.article-detail-page .article-content img {
+.article-box .article-content img {
   max-width: 100%;
 }
-.article-detail-page .close-btn {
-  width: 110px;
+.download {
+  color: #598BDD;
 }

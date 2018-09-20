@@ -1,0 +1,16 @@
+.kaopingyuanbaoming-page .result-box {
+  width: 300px;
+  margin: 0 auto;
+}
+.kaopingyuanbaoming-page .result-box .iconfont {
+  color: #6CD488;
+  font-size: 50px;
+  position: absolute;
+  margin-left: -70px;
+}
+.kaopingyuanbaoming-page .result-box .result-text {
+  color: #333;
+  font-size: 24px;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
