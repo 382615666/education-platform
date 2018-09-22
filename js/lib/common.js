@@ -1,3 +1,6 @@
+layer.config({
+    shadeClose: true
+})
 $(function () {
     // 关闭详情页
     $('.close-btn').on('click', function () {

@@ -8,3 +8,10 @@
   width: 600px;
   margin: 40px auto 0;
 }
+.certification-info {
+  padding: 20px 200px;
+  display: none;
+}
+.certification-info .layui-form-mid {
+  color: #333;
+}

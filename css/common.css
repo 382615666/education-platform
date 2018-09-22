@@ -36,6 +36,9 @@ p {
 .color_999 {
   color: #999;
 }
+.edu-dialog {
+  display: none;
+}
 .layui-colla-item.active .layui-colla-title {
   background: #598BDD;
   color: #fff;
@@ -289,5 +292,17 @@ p {
   max-width: 100%;
 }
 .download {
+  color: #598BDD;
+}
+.download:hover {
+  color: #598BDD;
+}
+.website-link {
+  color: #598BDD;
+}
+.website-link:hover {
+  color: #598BDD;
+}
+.layui-table .table-btn {
   color: #598BDD;
 }

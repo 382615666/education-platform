@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>培训机构信息库</title>
+    <title>民办党建工作</title>
     <link rel="stylesheet" href="../js/plugin/layui/css/layui.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../font/iconfont.css">
-    <link rel="stylesheet" href="../css/peixunjigouxinxiku.css">
+    <link rel="stylesheet" href="../css/minbandangjiangongzuo.css">
 </head>
 <body style="background-image: url(../image/indexbg.jpg)">
     <div class="main">
@@ -91,7 +91,7 @@
             </p>
             政策文件
         </div>
-        <div class="peixunjigouxinxiku-page">
+        <div class="minbandangjiangongzuo-page">
             <div class="layout-two-column">
                 <div class="layout-left-column layout-list-btn-vertical">
                     <div class="layui-collapse" lay-accordion>
@@ -123,34 +123,30 @@
                     </div>
                 </div>
                 <div class="layout-right-column">
-                    <p class="peixunjigouxinxiku-tip">
-                        <i class="iconfont edu-tishi"></i>
-                        请输入证书编号（推荐使用）或身份证号+姓名，并且应准确无误
-                    </p>
-                    <form class="layui-form" action="">
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">身份证号</label>
-                            <div class="layui-input-block">
-                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">姓名</label>
-                            <div class="layui-input-block">
-                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">证书编号</label>
-                            <div class="layui-input-block">
-                                <input type="text" name="title" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="layui-btn layui-btn-primary">重置</a>
-                        <a href="javascript:void(0)" class="layui-btn layui-btn-normal" id="searchInfo">查询</a>
-                    </div>
+                    <a href="javascript:void(0)" class="adv-img">
+                        <img src="../image/indexbg.jpg" alt="" class="img">
+                    </a>
+                    <a href="javascript:void(0)" class="dangjian-news-item-box">
+                        <img src="../image/indexbg.jpg" alt="" class="img">
+                        <h2 class="dangjian-news-title">新闻标题</h2>
+                        <p class="dangjian-news-aside">新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要</p>
+                    </a>
+                    <a href="javascript:void(0)" class="dangjian-news-item-box">
+                        <img src="../image/indexbg.jpg" alt="" class="img">
+                        <h2 class="dangjian-news-title">新闻标题</h2>
+                        <p class="dangjian-news-aside">新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要</p>
+                    </a>
+                    <a href="javascript:void(0)" class="dangjian-news-item-box">
+                        <img src="../image/indexbg.jpg" alt="" class="img">
+                        <h2 class="dangjian-news-title">新闻标题</h2>
+                        <p class="dangjian-news-aside">新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要</p>
+                    </a>
+                    <a href="javascript:void(0)" class="dangjian-news-item-box">
+                        <img src="../image/indexbg.jpg" alt="" class="img">
+                        <h2 class="dangjian-news-title">新闻标题</h2>
+                        <p class="dangjian-news-aside">新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要新闻摘要</p>
+                    </a>
+                    <div id="pagination" class="pagination-box"></div>
                 </div>
             </div>
         </div>
@@ -167,30 +163,6 @@
     <script src="../js/plugin/layui/layui.all.js"></script>
     <script src="../js/lib/jquery.extend.js"></script>
     <script src="../js/lib/common.js"></script>
-    <script src="../js/page/peixunjigouxinxiku.js"></script>
+    <script src="../js/page/minbandangjiangongzuo.js"></script>
 </body>
-<div id="certification-info" class="certification-info edu-dialog">
-    <form class="layui-form">
-        <div class="layui-form-item">
-            <label class="layui-form-label">姓名:</label>
-            <div class="layui-form-mid">张三</div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">性别:</label>
-            <div class="layui-form-mid">女</div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">身份证号:</label>
-            <div class="layui-form-mid">辅助文字</div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">培训职业:</label>
-            <div class="layui-form-mid">培训职业名称</div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">培训证号:</label>
-            <div class="layui-form-mid">15654646</div>
-        </div>
-    </form>
-</div>
 </html>

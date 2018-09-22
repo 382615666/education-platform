@@ -1,0 +1,48 @@
+.minbandangjiangongzuo-page{
+  .adv-img{
+    display: block;
+    height: 80px;
+    margin-bottom: 20px;
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .dangjian-news-item-box{
+    display: block;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 10px 0 10px 150px;
+    min-height: 100px;
+    &:hover{
+      .dangjian-news-title{
+        color: #2D6FDB;
+        text-decoration: underline;
+      }
+      .dangjian-news-aside{
+        color: #2D6FDB;
+        text-decoration: underline;
+      }
+    }
+    .img{
+      position: absolute;
+      width: 120px;
+      height: 100px;
+      margin-left: -140px;
+    }
+    .dangjian-news-title{
+      font-size: 18px;
+      color: #333;
+      line-height: 30px;
+    }
+    .dangjian-news-aside{
+      height: 50px;
+      line-height:25px;
+      overflow: hidden;
+      &:after{
+        content: '【详情】';
+        background: #fff;
+        color: #2D6FDB;
+      }
+    }
+  }
+}

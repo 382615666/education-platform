@@ -521,7 +521,7 @@ hr, .layui-timeline-item:before{background-color: #e6e6e6;}
 
 */
 
-.layui-btn{min-width: 110px; display: inline-block; vertical-align: middle; height: 40px; line-height: 40px; padding: 0 18px; background-color: #009688; color: #fff; white-space: nowrap; text-align: center; font-size: 14px; border: none; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+.layui-btn{display: inline-block; vertical-align: middle; height: 40px; line-height: 40px; padding: 0 20px; background-color: #009688; color: #fff; white-space: nowrap; text-align: center; font-size: 14px; border: none; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 .layui-btn:hover{color: #333;}
 .layui-btn:active{opacity: 1; filter:alpha(opacity=100);}
 .layui-btn+.layui-btn{margin-left: 10px;}
@@ -763,7 +763,6 @@ hr, .layui-timeline-item:before{background-color: #e6e6e6;}
 .layui-table tr{transition: all .3s; -webkit-transition: all .3s;}
 .layui-table th{text-align: left; font-weight: 400;}
 
-.layui-table thead tr,
 .layui-table-header,
 .layui-table-tool,
 .layui-table-total,
@@ -773,11 +772,15 @@ hr, .layui-timeline-item:before{background-color: #e6e6e6;}
 .layui-table[lay-even] tr:nth-child(even),
 .layui-table tbody tr:hover,
 .layui-table-hover,
-.layui-table-click{background-color: #f2f2f2;}
+.layui-table-click{background-color: #fff;}
+
+.layui-table[lay-skin="line"] th{
+  font-weight:bold;
+  color: #333;
+}
 
 .layui-table th,
 .layui-table td,
-.layui-table[lay-skin="line"],
 .layui-table[lay-skin="row"],
 .layui-table-view,
 .layui-table-tool,
@@ -787,9 +790,9 @@ hr, .layui-timeline-item:before{background-color: #e6e6e6;}
 .layui-table-page,
 .layui-table-fixed-r,
 .layui-table-tips-main,
-.layui-table-grid-down{border-width: 1px; border-style: solid; border-color: #e6e6e6;}
+.layui-table-grid-down{border-width: 1px; border-style: solid; border-color: #EAEAEA;}
 
-.layui-table th, .layui-table td{position: relative; padding: 9px 15px; min-height: 20px; line-height: 20px;  font-size: 14px;}
+.layui-table th, .layui-table td{position: relative; padding: 9px 15px; min-height: 30px; line-height: 30px;  font-size: 14px;}
 
 .layui-table[lay-skin="line"] th, .layui-table[lay-skin="line"] td{border-width: 0; border-bottom-width: 1px;}
 .layui-table[lay-skin="row"] th, .layui-table[lay-skin="row"] td{border-width: 0;border-right-width: 1px;}

@@ -1,0 +1,43 @@
+.jigongyuanxiaoxiangqing-page .layui-form .layui-form-item {
+  margin-bottom: 0;
+}
+.jigongyuanxiaoxiangqing-page .layui-form .layui-form-label {
+  color: #666;
+  padding: 5px 15px;
+}
+.jigongyuanxiaoxiangqing-page .layui-form .layui-input-block {
+  line-height: 25px;
+  min-height: 25px;
+  color: #333;
+  padding-top: 5px;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box {
+  padding: 10px 20px 10px 150px;
+  min-height: 120px;
+  background: #F4F4F4;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box + .teacher-info-item-box {
+  margin-top: 10px;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box:hover {
+  background: #EDF4FF;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box:hover .layui-input-block {
+  color: #2D6FDB;
+  text-decoration: underline;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box .img {
+  width: 120px;
+  margin-left: -140px;
+  height: 120px;
+  position: absolute;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box .teacher-name {
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 5px;
+}
+.jigongyuanxiaoxiangqing-page .shizililiang-box .teacher-info-item-box .teacher-name .teacher-aside {
+  font-size: 14px;
+  color: #666;
+}

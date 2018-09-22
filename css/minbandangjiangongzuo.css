@@ -1,0 +1,44 @@
+.minbandangjiangongzuo-page .adv-img {
+  display: block;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.minbandangjiangongzuo-page .adv-img .img {
+  width: 100%;
+  height: 100%;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box {
+  display: block;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 10px 0 10px 150px;
+  min-height: 100px;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box:hover .dangjian-news-title {
+  color: #2D6FDB;
+  text-decoration: underline;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box:hover .dangjian-news-aside {
+  color: #2D6FDB;
+  text-decoration: underline;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box .img {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  margin-left: -140px;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box .dangjian-news-title {
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box .dangjian-news-aside {
+  height: 50px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.minbandangjiangongzuo-page .dangjian-news-item-box .dangjian-news-aside:after {
+  content: '【详情】';
+  background: #fff;
+  color: #2D6FDB;
+}

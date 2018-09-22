@@ -34,3 +34,13 @@
   height: 38px;
   margin: 10px 0 30px;
 }
+.sign-up-info {
+  padding: 20px 50px 50px;
+  color: #999;
+}
+.sign-up-info .layui-form-label {
+  color: #333;
+}
+.sign-up-info .layui-input-block {
+  line-height: 38px;
+}

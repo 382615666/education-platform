@@ -3,8 +3,8 @@ $(function () {
         layui.layer.open({
             type: 1,
             title: '职业培训证书',
-            content: 'aa'
+            area: '700px',
+            content: $('#certification-info')
         })
     })
-
 })
