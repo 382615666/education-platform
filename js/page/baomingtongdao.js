@@ -4,13 +4,26 @@ $(function () {
             type: 1,
             title: '组织报名',
             area: '700px',
-            content: $('#sign-up-info')
+            content: $('#sign-up-info').html(),
+            success: function () {
+                debugger
+                layui.upload.render({
+                    elem: '.upload-baomingbiao-btn' //绑定元素
+                    ,url: '/upload/' //上传接口
+                    ,done: function(res){
+                        //上传完毕回调
+                    }
+                    ,error: function(){
+                        //请求异常回调
+                    }
+                })
+            }
         })
     })
-    $('#cancel-sign-up-btn').on('click', function () {
+    $('body').on('click', '.cancel-sign-up-btn', function () {
         layui.layer.close(layui.layer.index)
     })
-    $('#confirm-sign-up-btn').on('click', function () {
+    $('body').on('click', '.confirm-sign-up-btn', function () {
         layui.layer.close(layui.layer.index)
     })
     layui.upload.render({
@@ -23,16 +36,7 @@ $(function () {
             //请求异常回调
         }
     })
-    layui.upload.render({
-        elem: '#upload-baomingbiao-btn' //绑定元素
-        ,url: '/upload/' //上传接口
-        ,done: function(res){
-            //上传完毕回调
-        }
-        ,error: function(){
-            //请求异常回调
-        }
-    })
+
     layui.upload.render({
         elem: '#upload-file-btn' //绑定元素
         ,url: '/upload/' //上传接口

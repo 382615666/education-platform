@@ -4,7 +4,7 @@ $(function () {
             type: 1,
             title: '职业培训证书',
             area: '700px',
-            content: $('#certification-info')
+            content: $('#certification-info').html()
         })
     })
 })
