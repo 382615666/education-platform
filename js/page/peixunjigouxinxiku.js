@@ -5,7 +5,7 @@ $(function () {
     $('.layout-condition-item-box').on('click', '.layout-condition-value-item.link.active', function () {
         $(this).remove()
     })
-    $('body').on('click', '.major-change .major-item', function () {
+    $('.major-change').on('click', '.major-item', function () {
         layer.close(layer.index)
     })
     $('#major-btn').on('click', function () {
@@ -14,7 +14,7 @@ $(function () {
             title: '选择专业',
             area: '1000px',
             maxHeight: 700,
-            content: $('#major-change').html()
+            content: layui.jquery('#major-change')
         })
     })
     $('.table-btn').on('click', function () {
@@ -23,7 +23,7 @@ $(function () {
             title: '这里填学校名字',
             area: '800px',
             maxHeight: 400,
-            content: $('#major-info').html()
+            content: layui.jquery('#major-info')
         })
     })
 })

@@ -1,8 +1,8 @@
-.major-change {
+.major-change .major-list-wrap {
   height: 100%;
   overflow-y: auto;
 }
-.major-info {
+.major-info .major-list-wrap {
   height: 100%;
   overflow-y: auto;
 }

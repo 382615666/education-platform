@@ -4,13 +4,13 @@ $(function () {
             type: 1,
             title: '组织报名',
             area: '700px',
-            content: layui.jquery('#sign-up-info'),
+            content: layui.jquery('#sign-up-info')
         })
     })
-    $('body').on('click', '.cancel-sign-up-btn', function () {
+    $('#cancel-sign-up-btn').on('click', function () {
         layui.layer.close(layui.layer.index)
     })
-    $('body').on('click', '.confirm-sign-up-btn', function () {
+    $('#confirm-sign-up-btn').on('click', function () {
         layui.layer.close(layui.layer.index)
     })
     layui.upload.render({
