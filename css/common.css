@@ -404,3 +404,29 @@ p {
   margin-bottom: 5px;
   text-indent: 15px;
 }
+.book-mask {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.book-mask .book-title {
+  font-size: 24px;
+  color: #fff;
+  line-height: 50px;
+  padding: 0 20px;
+}
+.book-mask .flip-book-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.book-mask .flip-book-container .flipbook {
+  width: 1000px;
+  height: 600px;
+}
+.book-mask .flip-book-container .flipbook .page {
+  width: 500px;
+  height: 300px;
+}
