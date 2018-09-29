@@ -18,7 +18,5 @@ $(function () {
     $('.layui-colla-item .layui-colla-content-item').on('click', function (e) {
         e.stopPropagation()
     })
-    $('.flipbook').turn({
-        double: true
-    });
+
 })
