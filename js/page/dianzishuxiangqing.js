@@ -1,9 +1,10 @@
 $(function () {
-    function setPage () {
-        $('.flip-book-number').val($('.flipbook').turn('page'))
+    function setPage (page) {
+        $('.flip-book-number').val(page || $('.flipbook').turn('page'))
         $('.flip-book-page').text('/ ' + $('.flipbook').turn('pages'))
     }
     $('.flipbook').turn({
+        autoCenter: true,
         double: true
     });
     $('.flip-book-right,.edu-qianjin').on('click', function () {
@@ -39,4 +40,15 @@ $(function () {
         }
         $('.flipbook').turn('zoom', zoom)
     })
+    $(".flipbook").on("turning", function(event, page, view) {
+        setPage(page)
+    });
+    $(window).on('resize', function () {
+        var height = window.innerHeight - 50 - 40 - 25
+        var width = 1.5 * height
+        $('.flipbook').turn('size', width, height)
+        $('.flipbook-wrap').css({
+            width: width + 'px'
+        })
+    }).resize()
 })

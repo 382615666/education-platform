@@ -22,14 +22,12 @@
   margin: 0 auto;
   position: relative;
 }
-.dianzishuxiangqing-page .book-mask .flipbook {
-  width: 1200px;
-  height: 800px;
-  margin: 0 auto;
-}
 .dianzishuxiangqing-page .book-mask .flipbook .img {
   width: 100%;
   height: 100%;
+}
+.dianzishuxiangqing-page .book-mask .flipbook-wrap {
+  margin: 0 auto;
 }
 .dianzishuxiangqing-page .book-mask .flip-book-right {
   position: absolute;
