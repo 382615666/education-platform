@@ -11,12 +11,14 @@ $(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active')
         } else {
-            $(this).addClass('active').sibling().removeClass('active')
+            $(this).addClass('active').siblings().removeClass('active')
         }
     })
     // 阻止冒泡
     $('.layui-colla-item .layui-colla-content-item').on('click', function (e) {
         e.stopPropagation()
+        $('.layui-colla-item .layui-colla-content-item').removeClass('active')
+        $(this).addClass('active')
     })
 
 })
