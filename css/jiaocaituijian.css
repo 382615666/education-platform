@@ -1,0 +1,14 @@
+.jiaocaituijian-page .layout-list-vertical {
+  position: relative;
+}
+.jiaocaituijian-page .download-form {
+  display: none;
+}
+.jiaocaituijian-page .item-box:hover .download {
+  display: block;
+}
+.jiaocaituijian-page .download {
+  float: right;
+  margin-right: 20px;
+  display: none;
+}
