@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考评员培训竞赛报名表</title>
+    <link rel="stylesheet" href="../js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+<body class="bg_f4">
+    <div class="detail-box">
+        <p class="detail-title">考评员培训竞赛报名表</p>
+        <div class="main">
+            <div class="detail-body article-box">
+                <h1 class="article-title">考评员培训竞赛报名表</h1>
+                <div class="article-content ">
+                    <form class="layui-form">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                身份证号
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="identity" lay-verType="tips" lay-verify="required|identity" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                姓名
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="name" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                性别
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="sex" value="男" title="男" lay-verify="sex" lay-verType="tips">
+                                <input type="radio" name="sex" value="女" title="女">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                文化程度
+                            </label>
+                            <div class="layui-input-block">
+                                <select name="level" lay-verify="required" lay-verType="tips">
+                                    <option value=""></option>
+                                    <option value="10">研究生</option>
+                                    <option value="20">大学本科</option>
+                                    <option value="30">大学专科和专科学校</option>
+                                    <option value="40">中等专业学校</option>
+                                    <option value="50">技校</option>
+                                    <option value="51">高级技校</option>
+                                    <option value="52">技师学院</option>
+                                    <option value="60">高中</option>
+                                    <option value="61">职高</option>
+                                    <option value="70">初中</option>
+                                    <option value="80">小学</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                照片
+                            </label>
+                            <div class="layui-input-block">
+                                <img src="../image/indexbg.jpg" alt="" class="file-image">
+                                <input type="text" name="picture" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input file-input">
+                                <a href="javascript:void(0)" id="picture" class="layui-btn layui-btn-normal layui-btn-sm">上传照片</a>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                工作单位
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="workunit" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                通讯地址
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="address" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                邮政编码
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="zipcode" lay-verType="tips" lay-verify="phone" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                固定电话
+                            </label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 100px;">
+                                    <input type="text" name="areacode" lay-verType="tips" lay-verify="number" autocomplete="off" class="layui-input">
+                                </div>
+                                <div class="layui-input-inline" style="width: 200px;">
+                                    <input type="text" name="phonecode" lay-verType="tips" lay-verify="number" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                移动电话
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="mobile" placeholder="请输入" lay-verType="tips" lay-verify="phone" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                培训性质
+                            </label>
+                            <div class="layui-input-block">
+                                <select name="trainingquality" lay-verify="required" lay-verType="tips">
+                                    <option value=""></option>
+                                    <option value="认证">认证</option>
+                                    <option value="换证">换证</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                所在地区
+                            </label>
+                            <div class="layui-input-block">
+                                <select name="area" lay-verify="required" lay-verType="tips">
+                                    <option value=""></option>
+                                    <option value="长沙市">长沙市</option>
+                                    <option value="株洲市">株洲市</option>
+                                    <option value="湘潭市">湘潭市</option>
+                                    <option value="衡阳市">衡阳市</option>
+                                    <option value="邵阳市">邵阳市</option>
+                                    <option value="邵阳市">邵阳市</option>
+                                    <option value="常德市">常德市</option>
+                                    <option value="张家界市">张家界市</option>
+                                    <option value="益阳市">益阳市</option>
+                                    <option value="娄底市">娄底市</option>
+                                    <option value="郴州市">郴州市</option>
+                                    <option value="永州市">永州市</option>
+                                    <option value="怀化市">怀化市</option>
+                                    <option value="湘西州">湘西州</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                级别
+                            </label>
+                            <div class="layui-input-block">
+                                <select name="trainingquality" lay-verify="required" lay-verType="tips">
+                                    <option value=""></option>
+                                    <option value="高级考评员">1-高级考评员</option>
+                                    <option value="考评员">2-考评员</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                考评工种
+                            </label>
+                            <div class="layui-input-block">
+                                <select name="worktype" lay-verify="required" lay-verType="tips">
+                                    <option value=""></option>
+                                    <option value="焊工">焊工</option>
+                                    <option value="电工">电工</option>
+                                    <option value="起重装卸机械操作工">起重装卸机械操作工</option>
+                                    <option value="防水工">防水工</option>
+                                    <option value="砌筑工">砌筑工</option>
+                                    <option value="混凝土工">混凝土工</option>
+                                    <option value="钢筋工">钢筋工</option>
+                                    <option value="架子工">架子工</option>
+                                    <option value="电切削工">电切削工</option>
+                                    <option value="手工木工">手工木工</option>
+                                    <option value="评茶员">评茶员</option>
+                                    <option value="汽车维修工">汽车维修工</option>
+                                    <option value="有害生物防制员">有害生物防制员</option>
+                                    <option value="保安员">保安员</option>
+                                    <option value="安检员">安检员</option>
+                                    <option value="智能楼宇管理员">智能楼宇管理员</option>
+                                    <option value="中央空调系统运行操作员">中央空调系统运行操作员</option>
+                                    <option value="电梯安装维修工">电梯安装维修工</option>
+                                    <option value="制冷空调系统安装维修工">制冷空调系统安装维修工</option>
+                                    <option value="锅炉操作工">锅炉操作工</option>
+                                    <option value="机床装调维修工">机床装调维修工</option>
+                                    <option value="模具工">模具工</option>
+                                    <option value="铸造工">铸造工</option>
+                                    <option value="金属热处理工">金属热处理工</option>
+                                    <option value="车工">车工</option>
+                                    <option value="钳工">钳工</option>
+                                    <option value="磨工">磨工</option>
+                                    <option value="冲压工">冲压工</option>
+                                    <option value="制冷工">制冷工</option>
+                                    <option value="眼镜验光员">眼镜验光员</option>
+                                    <option value="眼镜定配工">眼镜定配工</option>
+                                    <option value="美容师">美容师</option>
+                                    <option value="美发师">美发师</option>
+                                    <option value="育婴员">育婴员</option>
+                                    <option value="保育员">保育员</option>
+                                    <option value="安全评价师">安全评价师</option>
+                                    <option value="劳动关系协调员">劳动关系协调员</option>
+                                    <option value="企业人力资源管理师">企业人力资源管理师</option>
+                                    <option value="中式烹调师">中式烹调师</option>
+                                    <option value="西式烹调师">西式烹调师</option>
+                                    <option value="西式面点师">西式面点师</option>
+                                    <option value="茶艺师">茶艺师</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                昵称/职业资格
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" name="coach" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
+                                上传附件
+                            </label>
+                            <div class="layui-input-block">
+                                <p class="color_999" style="line-height: 40px;">请将身份证正反面、职业资格证书或职称证书拍照并打包上传，换证学员还需上传原考评员证</p>
+                                <input type="text" name="attachment" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input file-input">
+                                <a href="javascript:void(0)" id="attachment" class="layui-btn layui-btn-normal layui-btn-sm">上传附件</a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="reset" class="layui-btn layui-btn-primary close-btn">取消</button>
+                            <button type="button" class="layui-btn layui-btn-normal" lay-submit lay-filter="form">立即提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/plugin/layui/layui.all.js"></script>
+    <script src="../js/lib/jquery.extend.js"></script>
+    <script src="../js/lib/common.js"></script>
+    <script src="../js/page/kaopingyuanpeixunjingsaibaoming.js"></script>
+</body>
+</html>
