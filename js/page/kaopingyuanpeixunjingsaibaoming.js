@@ -44,6 +44,7 @@ $(function () {
         layui.layer.open({
             type: 0,
             title: '报名表',
+            area: '400px',
             content: '<i class="iconfont edu-hebingxingzhuang" style="color: #6CD488;font-size: 30px;vertical-align: middle"></i> 报名表已经提交成功'
         })
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
