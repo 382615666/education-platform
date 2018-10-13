@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="../js/plugin/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/dengluzhuce.css">
+</head>
+<body class="bg_f4">
+    <div class="detail-box">
+        <p class="detail-title">登录/注册</p>
+        <div class="main">
+            <div class="detail-body">
+                <div class="dengluzhuce-page">
+                    <div class="layui-tab layui-tab-brief">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">登录</li>
+                            <li>注册</li>
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <form class="layui-form login-form" action="">
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <p class="login-label">账号</p>
+                                            <input type="text" name="title" required lay-verType="tips" lay-verify="required" placeholder="请输入身份者号" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <p class="login-label">密码</p>
+                                            <input type="password" name="password" required lay-verType="tips" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="login">登录</button>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <span class="color_999">
+                                                <i class="layui-icon layui-icon-about"></i>
+                                                忘记密码，请致电 0731-84900476 进行重置
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="layui-tab-item">
+                                <form class="layui-form register-form">
+                                    <div class="layui-form-item">
+                                        <p class="regiter-form-title">账号信息</p>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            身份证号
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <span class="color_999" style="margin-left: 10px;position: absolute;left: 100%;width: 210px;line-height: 38px;">
+                                                <i class="layui-icon layui-icon-about"></i>
+                                                身份证号将作为您的登录账号
+                                            </span>
+                                            <input type="text" name="identity" lay-verType="tips" lay-verify="required|identity" placeholder="请输入" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            设置密码
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <input type="password" name="password" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <p class="regiter-form-title">个人信息</p>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            姓名
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="name" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            手机号码
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="telephone" lay-verType="tips" lay-verify="required|phone" placeholder="请输入" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            性别
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <input type="radio" name="sex" value="男" title="男" lay-verify="sex" lay-verType="tips">
+                                            <input type="radio" name="sex" value="女" title="女">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            文化程度
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <select name="level" lay-verify="required" lay-verType="tips">
+                                                <option value=""></option>
+                                                <option value="10">研究生</option>
+                                                <option value="20">大学本科</option>
+                                                <option value="30">大学专科和专科学校</option>
+                                                <option value="40">中等专业学校</option>
+                                                <option value="50">技校</option>
+                                                <option value="51">高级技校</option>
+                                                <option value="52">技师学院</option>
+                                                <option value="60">高中</option>
+                                                <option value="61">职高</option>
+                                                <option value="70">初中</option>
+                                                <option value="80">小学</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            工作单位
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="workunit" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">
+                                            <span class="color_eb0000">*</span>
+                                            所在地区
+                                        </label>
+                                        <div class="layui-input-block">
+                                            <select name="area" lay-verify="required" lay-verType="tips">
+                                                <option value=""></option>
+                                                <option value="长沙市">长沙市</option>
+                                                <option value="株洲市">株洲市</option>
+                                                <option value="湘潭市">湘潭市</option>
+                                                <option value="衡阳市">衡阳市</option>
+                                                <option value="邵阳市">邵阳市</option>
+                                                <option value="邵阳市">邵阳市</option>
+                                                <option value="常德市">常德市</option>
+                                                <option value="张家界市">张家界市</option>
+                                                <option value="益阳市">益阳市</option>
+                                                <option value="娄底市">娄底市</option>
+                                                <option value="郴州市">郴州市</option>
+                                                <option value="永州市">永州市</option>
+                                                <option value="怀化市">怀化市</option>
+                                                <option value="湘西州">湘西州</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="register">注册账号</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/plugin/layui/layui.all.js"></script>
+    <script src="../js/lib/jquery.extend.js"></script>
+    <script src="../js/lib/common.js"></script>
+    <script src="../js/page/dengluzhuce.js"></script>
+</body>
+</html>
