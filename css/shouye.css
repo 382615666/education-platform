@@ -97,6 +97,9 @@
   position: relative;
   line-height: 34px;
 }
+.shouye-page .article-box .tab-box .tab-head-item + .tab-head-item {
+  margin-left: -5px;
+}
 .shouye-page .article-box .tab-box .tab-head-item:before {
   content: '';
   position: absolute;

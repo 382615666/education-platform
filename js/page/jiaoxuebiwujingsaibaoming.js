@@ -24,12 +24,6 @@ $(function () {
         }
     })
     layui.form.verify({
-        group: function (value, item) {
-            var val = $('[name='+arguments.callee.name+']:checked').val()
-            if (!val) {
-                return '请选择参赛组别'
-            }
-        },
         sex: function (value, item) {
             var val = $('[name='+arguments.callee.name+']:checked').val()
             if (!val) {
