@@ -51,6 +51,9 @@
   overflow: hidden;
   padding: 0 20px;
 }
+.shouye-page .active-box .active-item:hover {
+  color: #598BDD;
+}
 .shouye-page .layui-carousel {
   float: left;
 }
@@ -135,6 +138,9 @@
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.shouye-page .article-box .article-list-box .article-item:hover {
+  color: #598BDD;
 }
 .shouye-page .article-box .article-list-box .iconfont {
   float: right;

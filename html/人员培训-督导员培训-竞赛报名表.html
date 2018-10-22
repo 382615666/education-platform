@@ -86,11 +86,10 @@
                         </div>
                         <div class="layui-form-item">
                             <label class="layui-form-label">
-                                <span class="color_eb0000">*</span>
                                 通讯地址
                             </label>
                             <div class="layui-input-block">
-                                <input type="text" name="address" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                                <input type="text" name="address" placeholder="请输入" autocomplete="off" class="layui-input">
                             </div>
                         </div>
                         <div class="layui-form-item">
@@ -116,10 +115,11 @@
                         </div>
                         <div class="layui-form-item">
                             <label class="layui-form-label">
+                                <span class="color_eb0000">*</span>
                                 移动电话
                             </label>
                             <div class="layui-input-block">
-                                <input type="text" name="mobile" placeholder="请输入" lay-verType="tips" lay-verify="phone" autocomplete="off" class="layui-input">
+                                <input type="text" name="mobile" placeholder="请输入" lay-verify="required|phone" lay-verType="tips" lay-verify="phone" autocomplete="off" class="layui-input">
                             </div>
                         </div>
                         <div class="layui-form-item">
