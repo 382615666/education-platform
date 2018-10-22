@@ -30,7 +30,10 @@ $(function () {
         } else {
             zoom = zoom - 0.1
         }
-        $('.flipbook').turn('zoom', zoom)
+        var width = $('.flipbook').turn('zoom', zoom).css('width')
+        $('.flipbook-wrap').css({
+            width: width
+        })
     })
     $('.edu-fangda').on('click', function () {
         if (zoom >= 1) {
@@ -38,7 +41,10 @@ $(function () {
         } else {
             zoom = zoom + 0.1
         }
-        $('.flipbook').turn('zoom', zoom)
+        var width = $('.flipbook').turn('zoom', zoom).css('width')
+        $('.flipbook-wrap').css({
+            width: width
+        })
     })
     $(".flipbook").on("turning", function(event, page, view) {
         setPage(page)
@@ -48,7 +54,8 @@ $(function () {
         var width = 1.5 * height
         $('.flipbook').turn('size', width, height)
         $('.flipbook-wrap').css({
-            width: width + 'px'
+            width: width + 'px',
+            height: height + 'px'
         })
     }).resize()
 })

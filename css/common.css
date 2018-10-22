@@ -194,10 +194,10 @@ p {
   color: #fff;
   text-align: center;
   background: #2f6ed5;
-  font-size: 0;
+  height: 90px;
 }
 .nav .nav-item {
-  display: inline-block;
+  float: left;
   width: 118px;
   height: 75px;
   padding-top: 15px;
@@ -240,8 +240,9 @@ p {
 }
 .nav-search .site-search-box .input {
   vertical-align: middle;
-  line-height: 40px;
+  line-height: 30px;
   width: 370px;
+  padding: 5px 10px;
   background: #d7ecff;
 }
 .nav-path {
