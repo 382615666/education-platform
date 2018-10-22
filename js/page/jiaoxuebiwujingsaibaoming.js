@@ -4,7 +4,7 @@ $(function () {
     })
     layui.upload.render({
         elem: '#picture', //绑定元素
-        accept: 'images',
+        acceptMime: 'image/jpg,image/jpeg,image/png,image/bmp',
         url: '/upload/' //上传接口
         ,done: function(res){
             //上传完毕回调

@@ -420,9 +420,13 @@ p {
   padding: 10px;
 }
 .major-list-box .major-item-box .major-item {
+  overflow: hidden;
+  height: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: inline-block;
   width: 24%;
-  line-height: 30px;
+  line-height: 25px;
   margin-bottom: 5px;
   text-indent: 15px;
 }

@@ -16,5 +16,5 @@ $(function () {
             maxHeight: 700,
             content: layui.jquery('#major-change')
         })
-    })
+    }).click()
 })
