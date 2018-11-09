@@ -4,6 +4,27 @@
 .zazhi-page .zazhi-item-box + .zazhi-item-box {
   margin-left: 25px;
 }
+.zazhi-page .zazhi-item-box.unpublish .za-item-link {
+  background: #f4f4f4;
+  text-align: center;
+  padding-top: 120px;
+  height: 180px;
+}
+.zazhi-page .zazhi-item-box.unpublish .za-item-link .iconfont {
+  font-size: 22px;
+  line-height: 1;
+}
+.zazhi-page .zazhi-item-box.unpublish .zazhi-time {
+  color: #999;
+}
+.zazhi-page .zazhi-item-box.unpublish .zazhi-title {
+  color: #999;
+}
+.zazhi-page .zazhi-item-box.unpublish .layui-btn {
+  color: #999;
+  border: none;
+  background: #f4f4f4;
+}
 .zazhi-page .zazhi-item-box .za-item-link {
   display: block;
   width: 230px;
