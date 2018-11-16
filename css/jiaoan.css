@@ -13,7 +13,10 @@
 .jiaoan-page .jiaoan-item-box .jiaoan-item-link:hover {
   box-shadow: 0px 0px 5px 2px #ccc;
 }
-.jiaoan-page .jiaoan-item-box .jiaoan-item-link.shipin:hover:before {
+.jiaoan-page .jiaoan-item-box .jiaoan-item-link:hover:before {
+  display: block;
+}
+.jiaoan-page .jiaoan-item-box .jiaoan-item-link:before {
   content: '';
   position: absolute;
   left: 0;
@@ -22,6 +25,7 @@
   height: 100%;
   background: #000;
   opacity: .2;
+  display: none;
 }
 .jiaoan-page .jiaoan-item-box .jiaoan-item-link.ppt .iconfont {
   color: #FF9843;
@@ -36,25 +40,25 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  font-size: 60px;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-.jiaoan-page .jiaoan-item-box .edu-bofang {
-  color: #598BDD;
+  font-size: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
   z-index: 1;
 }
-.jiaoan-page .jiaoan-item-box .edu-bofang:after {
+.jiaoan-page .jiaoan-item-box .iconfont:after {
   content: '';
   background: #fff;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
+  margin-left: -10px;
+  margin-top: -10px;
   z-index: -1;
+}
+.jiaoan-page .jiaoan-item-box .edu-bofang {
+  color: #598BDD;
 }
 .jiaoan-page .jiaoan-item-box .jiaoan-title {
   color: #333;
