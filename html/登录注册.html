@@ -135,7 +135,20 @@
                                             工作单位
                                         </label>
                                         <div class="layui-input-block">
-                                            <input type="text" name="workunit" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                                            <select name="workunit" lay-verify="required" lay-verType="tips" lay-search>
+                                                <option value=""></option>
+                                                <option value="10">研究生</option>
+                                                <option value="20">大学本科</option>
+                                                <option value="30">大学专科和专科学校</option>
+                                                <option value="40">中等专业学校</option>
+                                                <option value="50">技校</option>
+                                                <option value="51">高级技校</option>
+                                                <option value="52">技师学院</option>
+                                                <option value="60">高中</option>
+                                                <option value="61">职高</option>
+                                                <option value="70">初中</option>
+                                                <option value="80">小学</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="layui-form-item">
