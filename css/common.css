@@ -241,6 +241,7 @@ p {
 .nav-search .site-search-box .input {
   vertical-align: middle;
   line-height: 30px;
+  height: 30px;
   width: 370px;
   padding: 5px 10px;
   background: #d7ecff;
@@ -267,7 +268,7 @@ p {
 }
 .footer:before {
   background: #000;
-  opacity: 0.6;
+  opacity: .6;
   position: absolute;
   left: 0;
   right: 0;
