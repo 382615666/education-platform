@@ -134,8 +134,8 @@
                                             <span class="color_eb0000">*</span>
                                             工作单位
                                         </label>
-                                        <div class="layui-input-block">
-                                            <select name="workunit" lay-verify="required" lay-verType="tips" lay-search>
+                                        <div class="layui-input-inline" style="width: 315px;margin-right: 0;">
+                                            <select name="workunit" lay-filter="filter" lay-verify="required" lay-verType="tips" lay-search>
                                                 <option value=""></option>
                                                 <option value="10">研究生</option>
                                                 <option value="20">大学本科</option>
@@ -149,6 +149,9 @@
                                                 <option value="70">初中</option>
                                                 <option value="80">小学</option>
                                             </select>
+                                        </div>
+                                        <div id="workunit-other" class="layui-input-inline layui-hide" style="position: absolute;margin-left: 10px;width: 200px;">
+                                            <input type="text" name="other" lay-verType="tips" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                                         </div>
                                     </div>
                                     <div class="layui-form-item">
