@@ -110,8 +110,12 @@ a {
 .main-content .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #2d6fdb;
 }
+.main-content .swiper-container .img {
+  display: block;
+}
 .main-content .swiper-container .img-link {
   display: block;
+  position: relative;
 }
 .main-content .swiper-container .img-text {
   position: absolute;
@@ -121,6 +125,7 @@ a {
   height: 35px;
   line-height: 35px;
   color: #fff;
+  background: #000000;
   background: rgba(0, 0, 0, 0.7);
   padding: 0 110px 0 10px;
 }
