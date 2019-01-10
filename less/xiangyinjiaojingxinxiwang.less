@@ -100,9 +100,22 @@ a{
     margin: 0;
     .swiper-pagination{
       right: 0;
-      width: 110px;
+      width: 90px;
+      padding: 0 10px;
       left: auto;
       text-align: right;
+      bottom: 7px;
+      position: absolute;
+      .swiper-pagination-switch{
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        display: inline-block;
+        border-radius: 50%;
+        & + .swiper-pagination-switch{
+          margin-left: 10px;
+        }
+      }
       .swiper-pagination-bullet{
         background: #fff;
         opacity: 1;

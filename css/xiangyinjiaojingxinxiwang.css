@@ -99,9 +99,22 @@ a {
 }
 .main-content .swiper-container .swiper-pagination {
   right: 0;
-  width: 110px;
+  width: 90px;
+  padding: 0 10px;
   left: auto;
   text-align: right;
+  bottom: 7px;
+  position: absolute;
+}
+.main-content .swiper-container .swiper-pagination .swiper-pagination-switch {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+}
+.main-content .swiper-container .swiper-pagination .swiper-pagination-switch + .swiper-pagination-switch {
+  margin-left: 10px;
 }
 .main-content .swiper-container .swiper-pagination .swiper-pagination-bullet {
   background: #fff;
